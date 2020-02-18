@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Gruppo&display=swap');
+
+h3 {
+    font-family: 'Gruppo', cursive;
+    font-size: 148px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+p {
+    font-family: 'Gruppo', cursive;
+    font-size: 72px;
+    margin: auto;
+    text-align: center;
+}
+
+#speaker {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
