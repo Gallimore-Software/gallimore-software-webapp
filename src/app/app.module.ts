@@ -13,6 +13,7 @@ import { AboutUsComponent } from './shared/components/about-us/about-us.componen
 import { NavComponent } from './shared/components/nav/nav.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { ComponentPageTitle } from './shared/services/page-title/page-title';
+import { SlideShowComponent } from './shared/components/slide-show/slide-show.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ComponentPageTitle } from './shared/services/page-title/page-title';
     HomeComponent,
     AboutUsComponent,
     NavComponent,
-    HeaderComponent
+    HeaderComponent,
+    SlideShowComponent
   ],
   imports: [
     BrowserModule,
