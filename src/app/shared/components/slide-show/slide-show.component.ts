@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-slide-show',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slide-show.component.scss']
 })
 export class SlideShowComponent implements OnInit {
-
+  
   slideIndex = 0;
 
   constructor() { }
@@ -15,11 +15,11 @@ export class SlideShowComponent implements OnInit {
   }
 
   next() {
-    (this.slideIndex === 2) ? this.slideIndex = 0 : this.slideIndex++;
+    (this.slideIndex === 3) ? this.slideIndex = 0 : this.slideIndex++;
   }
 
   prev() {
-    (this.slideIndex === 0) ? this.slideIndex = 2 : this.slideIndex--;
+    (this.slideIndex === 0) ? this.slideIndex = 3 : this.slideIndex--;
   }
 
   show(n) {
