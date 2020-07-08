@@ -1,0 +1,43 @@
+@import '../../../../../styles/general';
+
+.about-us-container {
+    margin-top: 100px;
+    background-color: $dark-background;
+    color: $light-text;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: normal;
+    flex-wrap: wrap;
+    padding: 80px 300px;
+    padding-top: 80px;
+    margin-bottom: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.big-text {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 36px;
+    padding-top: 50px;
+}
+
+.proud-container {
+    display: flex;
+    line-height: normal;
+    margin-bottom: 60px;
+}
+
+.proud-text {
+    font-size: 144px;
+    font-weight: bold;
+    color: $dark-text;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: normal;
+}
