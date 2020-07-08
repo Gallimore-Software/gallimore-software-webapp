@@ -9,11 +9,13 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { AboutUsComponent } from './shared/components/about-us/about-us.component';
+import { AboutUsComponent } from './pages/home/components/about-us/about-us.component';
 import { NavComponent } from './shared/components/nav/nav.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { ComponentPageTitle } from './shared/services/page-title/page-title';
 import { SlideShowComponent } from './shared/components/slide-show/slide-show.component';
+import { WhatWeDoComponent } from './pages/home/components/what-we-do/what-we-do.component';
+import { ProudComponent } from './pages/home/components/proud/proud.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { SlideShowComponent } from './shared/components/slide-show/slide-show.co
     AboutUsComponent,
     NavComponent,
     HeaderComponent,
-    SlideShowComponent
+    SlideShowComponent,
+    WhatWeDoComponent,
+    ProudComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+@import '../../../../../styles/general';
+
+.what-we-do-container {
+    display: flex;
+    line-height: normal;
+    background-color: $dark-background;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.what-we-do-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: $light-text;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: normal;
+    width: 100%;
+}
