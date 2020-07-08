@@ -1,13 +1,32 @@
-.fill-remaining-space {
-  /* This fills the remaining space, by using flexbox. 
-     Every toolbar row uses a flexbox row layout. */
-  flex: 1 1 auto;
+@import '../../../../styles/general';
+
+
+mat-toolbar-row {
+  padding: 0 30px;
+  margin-top: 15px;
 }
 
 .title {
-  margin-right: 10px;
+  color: $dark-text;
+  font-size: 30px;
 }
 
-.page-title {
-  font-size: 12px;
+.nav-item {
+  @media (max-width: $small-breakpoint-width) {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+
+  @media (max-width: $small-breakpoint-width) {
+    display: flex;
+  }
+}
+
+.fill-remaining-space {
+  @media (max-width: $small-breakpoint-width) {
+    display: none;
+  }
 }
