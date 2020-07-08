@@ -1,13 +1,13 @@
-<mat-toolbar color="primary" role="heading">
-
-  <span class="title">{{title}}</span>
-
-  <!-- This fills the remaining space of the current row -->
-  <span class="fill-remaining-space"></span>
-
-  <span class="icon-wrapper">
-    <img src="../../../../assets/github-circle-white-transparent.svg">
-    GitHub
+<mat-toolbar-row>
+  <button mat-button class="hamburger" (click)="toggleSidenav.emit()">
+    <mat-icon color="primary">menu</mat-icon>
+  </button>
+  <span class="logo nav-item">
+    <img src="../../../../assets/gallimore-software-logo.svg">
   </span>
-
-</mat-toolbar>
+  <span class="title nav-item" focusOnNavigation>{{getTitle()}}</span>
+  <span class="fill-remaining-space nav-item"></span>
+  <button mat-button color="primary" class="nav-item">About Us</button>
+  <button mat-button color="primary" class="nav-item">What We Do</button>
+  <button mat-raised-button color="primary" class="nav-item">Contact</button>
+</mat-toolbar-row>
