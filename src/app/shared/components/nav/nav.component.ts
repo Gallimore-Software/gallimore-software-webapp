@@ -1,19 +1,18 @@
-import { environment } from './../../../../environments/environment';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
-export class NavComponent implements OnInit {
+export class NavComponent {
 
-  public github = '@assets/github-circle-white-transparent.svg';
-  public title = environment.title;
+  constructor(public componentPageTitle: ComponentPageTitle) { }
 
-  constructor() { }
+  @Output() toggleSidenav = new EventEmitter<null>();
 
-  ngOnInit(): void {
-    console.log(this.title);
+  getTitle() {
+    return this.componentPageTitle.title;
   }
-
 }
