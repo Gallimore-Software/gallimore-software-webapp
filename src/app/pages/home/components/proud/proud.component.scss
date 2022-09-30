@@ -3,15 +3,50 @@
 .proud-container {
     display: flex;
     line-height: normal;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .proud-text {
-    font-size: 144px;
+    font-size: 70px;
     font-weight: bold;
     color: $dark-text;
     text-align: center;
-    padding-left: 300px;
-    padding-right: 300px;
-    line-height: normal;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    display: flex;
+}
+
+
+/* media query for responsiveness */
+
+@media screen and (max-width: 760px) {
+    .proud-container {
+        margin-bottom: 25px;
+    }
+    
+    .proud-text {
+        font-size: 35px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    
+}
+
+    
+
+
+@media screen and (max-width: 460px) {
+    .proud-container {
+        margin-bottom: 15px;
+    }
+    
+    .proud-text {
+        font-size: 25px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
 }
