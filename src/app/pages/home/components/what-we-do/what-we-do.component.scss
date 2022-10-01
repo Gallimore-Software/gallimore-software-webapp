@@ -6,15 +6,81 @@
     background-color: $dark-background;
     padding: 50px 0;
     width: 100%;
+    
 }
 
-.what-we-do-text {
-    font-size: 48px;
+.what-we-do {
+    line-height: normal;
+    padding: 30px 0;
+    display: flex;
+    
+}
+
+.what-we-do-header {
+    font-size: 38px;
     font-weight: bold;
     color: $light-text;
     text-align: center;
-    padding-left: 300px;
-    padding-right: 300px;
     line-height: normal;
     width: 100%;
+    position: relative;
+    
+}
+
+.what-we-do-text-small {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: normal;
+    width: 100%;
+    color: $dark-text;
+}
+
+/* media query for responsiveness */
+
+@media screen and (max-width: 760px) {
+    .what-we-do-container {
+        padding: 35px 0;
+        
+    }
+    
+    .what-we-do {
+        padding: 20px 0;
+
+        
+    }
+    
+    .what-we-do-header {
+        font-size: 28px;
+        
+    }
+    
+    .what-we-do-text-small {
+        font-size: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width: 460px) {
+    .what-we-do-container {
+        padding: 35px 0;
+        
+    }
+    
+    .what-we-do {
+        padding: 20px 0;
+
+        
+    }
+    
+    .what-we-do-header {
+        font-size: 28px;
+        
+    }
+    
+    .what-we-do-text-small {
+        font-size: 20px;
+    }
+    
 }
