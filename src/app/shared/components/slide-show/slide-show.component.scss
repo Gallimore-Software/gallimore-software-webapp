@@ -19,6 +19,7 @@
 
 .slide-image {
     width: 100%;
+    background-size: contain;
 }
 
 .hover-white {
@@ -42,13 +43,14 @@
     justify-content: center;
     position: relative;
     bottom: 50px;
+    flex-wrap: nowrap;
 }
 
 .text-container {
-    position: relative;
-    bottom: 500px;
+    position: absolute;
     justify-content: start;
     line-height: normal;
+    bottom: 70%;
     display: flex;
     flex-wrap: wrap;
     color: $light-background!important;
@@ -60,7 +62,7 @@
     font-size: 95px;
     font-weight: bold;
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
 }
 
 .small-text {
@@ -69,10 +71,22 @@
 
 /* media query for responsiveness */
 
+@media screen and (max-width: 1108px) {
+    
+    .big-text {
+        font-size: 65px;
+        padding-bottom: 2%;
+    }
+    
+    .small-text {
+        font-size: 30px;
+    }
+
+}
+
 @media screen and (max-width: 760px) {
     .slideshow-container {
-        padding: 50px;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+        padding: 8%;
         margin: 10px 20px;
     }
     
@@ -92,49 +106,83 @@
     }
     
     .text-container {
-        bottom: 2px;
-        height: 0;
-        padding: 0 50px;
+        padding: 0 10%;
+        bottom: 76%;
+        padding-left: 2%;
     }
     
     .big-text {
-        font-size: 95px;
-        padding-bottom: 20px;
+        font-size: 28px;
+        padding-bottom: 2%;
     }
     
     .small-text {
-        font-size: 36px;
+        font-size: 16px;
     }
  
 }
 
 @media screen and (max-width: 460px) {
+    .slideshow-container {
+        padding: 5%;
+        margin: 4%;
+    }
+
+    .arrow-button {
+        padding: 0 3%;
+    }
+    
     .about-us-container {
-        margin-top: 10%;
-        padding: 40px 130px;
-        padding-top: 10%;
-        margin-bottom: 10%;
-        padding-left: 10%;
-        padding-right: 10%;
+        margin-top: 0;
+        padding: 0;
     }
     
+    .text-container {
+        padding: 0 8%;
+        bottom: 79%;
+        padding-left: 2%;
+    }
+
     .big-text {
-        font-size: 26px;
-    }
-    
-    .small-text {
         font-size: 16px;
+        padding-bottom: 1%;
+    }
+
+    .small-text {
+        font-size: 10px;
         padding-top: 5%;
     }
     
-    .proud-container {
-        margin-bottom: 8%;
+}
+
+@media screen and (max-width: 330px) {
+    .slideshow-container {
+        padding: 5%;
+        margin: 4%;
+    }
+
+    .arrow-button {
+        padding: 0 3%;
     }
     
-    .proud-text {
-        font-size: 40px;
-        padding-left: 5%;
-        padding-right: 5%;
+    .about-us-container {
+        margin-top: 0;
+        padding: 0;
     }
     
+    .text-container {
+        padding: 0 8%;
+        bottom: 81%;
+        padding-left: 2%;
+    }
+
+    .big-text {
+        font-size: 9px;
+        padding-bottom: 1%;
+    }
+
+    .small-text {
+        font-size: 6px;
+        padding-top: 5%;
+    }
 }
