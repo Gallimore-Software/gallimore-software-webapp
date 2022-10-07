@@ -7,41 +7,57 @@
 }
 
 .proud-text {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
     color: $dark-text;
     text-align: center;
+    padding-top: 1%;
+    padding-bottom: 3%;
     padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2%;
-    padding-bottom: 4%;
     display: flex;
 }
 
 /* media query for responsiveness */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1269px) {
+    .proud-text {
+        font-size: 43px;
+    }
+
+}
+
+@media screen and (max-width: 849px) {
     .proud-container {
         margin-bottom: 25px;
     }
     
     .proud-text {
-        font-size: 35px;
-        padding-left: 7%;
-        padding-right: 7%;
+        font-size: 27px;
+        padding-left: 12%;
     }
     
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 533px) {
     .proud-container {
         margin-bottom: 15px;
     }
     
     .proud-text {
-        font-size: 25px;
-        padding-left: 5%;
-        padding-right: 5%;
+        font-size: 16.7px;
+        text-align: center;
     }
     
+}
+
+@media screen and (max-width: 330px) {    
+    .proud-container {
+        margin-bottom: 8px;
+    }
+    
+    .proud-text {
+        font-size: 10px;
+        padding-left: 15%;
+        text-align: center;
+    }
 }
