@@ -10,14 +10,14 @@
 }
 
 .what-we-do {
-    line-height: normal;
-    padding: 30px 0;
     display: flex;
-    
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0 5%;
 }
 
 .what-we-do-header {
-    font-size: 40px;
+    font-size: 22px;
     font-weight: bold;
     color: $light-text;
     text-align: center;
@@ -27,7 +27,35 @@
     
 }
 
+.what-we-do-icon {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+
+}
+
+.what-we-do-title {
+    font-size: 21px;
+    color: $dark-text;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8%;
+}
+
 .what-we-do-text-small {
+    margin: 10px 10px 50px;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: $dark-text;
+}
+
+.what-we-do-excel {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
