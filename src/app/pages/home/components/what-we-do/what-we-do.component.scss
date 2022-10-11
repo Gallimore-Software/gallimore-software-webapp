@@ -14,6 +14,7 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: 0 5%;
+    padding-top: 7%;
 }
 
 .what-we-do-header {
@@ -30,14 +31,13 @@
 .what-we-do-icon {
     display: flex;
     align-items: center;
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
+    width: 100%;
+    padding-left: 38%;
 
 }
 
 .what-we-do-title {
-    font-size: 21px;
+    font-size: 23px;
     color: $dark-text;
     font-weight: bold;
     text-align: center;
@@ -46,7 +46,7 @@
 
 .what-we-do-text-small {
     margin: 10px 10px 50px;
-    padding: 20px;
+    padding: 21px;
     width: 250px;
     display: flex;
     font-size: 20px;
