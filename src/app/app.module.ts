@@ -16,6 +16,7 @@ import { ComponentPageTitle } from './shared/services/page-title/page-title';
 import { SlideShowComponent } from './shared/components/slide-show/slide-show.component';
 import { WhatWeDoComponent } from './pages/home/components/what-we-do/what-we-do.component';
 import { ProudComponent } from './pages/home/components/proud/proud.component';
+import { WhatWeDoItemComponent } from './what-we-do-item/what-we-do-item.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProudComponent } from './pages/home/components/proud/proud.component';
     HeaderComponent,
     SlideShowComponent,
     WhatWeDoComponent,
-    ProudComponent
+    ProudComponent,
+    WhatWeDoItemComponent
   ],
   imports: [
     BrowserModule,
