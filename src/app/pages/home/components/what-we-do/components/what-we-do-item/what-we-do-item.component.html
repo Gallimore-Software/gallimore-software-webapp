@@ -1,5 +1,5 @@
 <div>
-    <img class="what-we-do-icon" [src]=imageUrl [alt]=altText></div>
-    <div class="what-we-do-title">{{title}}</div>
-    <div class="what-we-do-text-small">{{textContent}}</div>
-</div>
+    <img class="what-we-do-icon" [src]="item.imageUrl" [alt]="item.imageDescription">
+    <div class="what-we-do-title">{{item.name}}</div>
+    <div class="what-we-do-text-small">{{item.textContent}}</div>
+</div> 

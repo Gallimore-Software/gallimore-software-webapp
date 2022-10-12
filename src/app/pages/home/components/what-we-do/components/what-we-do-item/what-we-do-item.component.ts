@@ -1,19 +1,17 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { WhatWeDoItem } from './models/what-we-do-item';
 
 @Component({
   selector: 'app-what-we-do-item',
   templateUrl: './what-we-do-item.component.html',
   styleUrls: ['./what-we-do-item.component.scss']
 })
-export class WhatWeDoItemComponent implements OnInit {
-  @Input() imageUrl = '';
-  @Input() textContent = '';
-  @Input() title = '';
-  @Input() altText = '';
+export class WhatWeDoItemComponent implements AfterViewInit {
+  @Input() item: WhatWeDoItem;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
   }
 
 }
