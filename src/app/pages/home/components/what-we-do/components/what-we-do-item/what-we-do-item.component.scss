@@ -3,8 +3,8 @@
 .what-we-do-icon {
     display: flex;
     align-items: center;
-    width: 100%;
     justify-content: center;
+    width: 100%;
 }
 
 .what-we-do-title {
@@ -26,6 +26,12 @@
     color: $dark-text;
 }
 
+.what-we-do {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0 5%;
+}
 
 /* media query for responsiveness */
 
