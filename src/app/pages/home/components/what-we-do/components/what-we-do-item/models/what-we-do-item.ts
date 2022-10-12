@@ -5,7 +5,7 @@ export class WhatWeDoItem
     imageDescription: string;
     name: string;
 
-    constructor(name, imageUrl, imageDescription, textContent) {
+    constructor(name: string, imageUrl: string, imageDescription: string, textContent: string) {
         this.name = name;
         this.imageUrl = imageUrl;
         this.imageDescription = imageDescription;
