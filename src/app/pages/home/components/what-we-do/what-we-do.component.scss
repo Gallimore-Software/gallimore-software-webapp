@@ -54,20 +54,6 @@
     color: $dark-text;
 }
 
-.what-we-do-excel {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    line-height: normal;
-    width: 100%;
-    color: $dark-text;
-}
-
-.excel-text {
-    padding-top: 2%;
-    font-size: 22px;
-}
-
 /* media query for responsiveness */
 
 @media screen and (max-width: 760px) {
@@ -83,14 +69,17 @@
     }
     
     .what-we-do-header {
-        font-size: 26px;
+        font-size: 18px;
         
+    }
+    
+    .what-we-do-title {
+        font-size: 18px;
     }
     
     .what-we-do-text-small {
         font-size: 16px;
     }
-
     
 }
 
@@ -111,8 +100,11 @@
         
     }
     
-    .what-we-do-text-small {
-        font-size: 20px;
+    .what-we-do-title {
+        font-size: 12px;
     }
     
+    .what-we-do-text-small {
+        font-size: 10px;
+    }
 }
