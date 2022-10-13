@@ -14,7 +14,7 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: 0 5%;
-    padding-top: 7%;
+    padding-top: 5%;
 }
 
 .what-we-do-header {
@@ -40,7 +40,7 @@
     color: $dark-text;
     font-weight: bold;
     text-align: center;
-    padding-top: 8%;
+    padding-top: 5%;
 }
 
 .what-we-do-text-small {
@@ -55,12 +55,17 @@
 }
 
 .what-we-do-excel {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     line-height: normal;
     width: 100%;
     color: $dark-text;
+}
+
+.excel-text {
+    padding-top: 2%;
+    font-size: 22px;
 }
 
 /* media query for responsiveness */
