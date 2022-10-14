@@ -18,6 +18,7 @@ import { WhatWeDoComponent } from './pages/home/components/what-we-do/what-we-do
 import { ProudComponent } from './pages/home/components/proud/proud.component';
 import { WhatWeDoItemComponent } from './pages/home/components/what-we-do/components/what-we-do-item/what-we-do-item.component';
 import { TechnologiesWeUseComponent } from './pages/home/components/technologies-we-use/technologies-we-use.component';
+import { TechnologiesWeUseItemComponent } from './pages/home/components/technologies-we-use/components/technologies-we-use-item/technologies-we-use-item.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TechnologiesWeUseComponent } from './pages/home/components/technologies
     WhatWeDoComponent,
     ProudComponent,
     WhatWeDoItemComponent,
-    TechnologiesWeUseComponent
+    TechnologiesWeUseComponent,
+    TechnologiesWeUseItemComponent
   ],
   imports: [
     BrowserModule,
