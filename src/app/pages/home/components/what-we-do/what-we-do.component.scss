@@ -14,7 +14,7 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: 0 5%;
-    padding-top: 7%;
+    padding-top: 5%;
 }
 
 .what-we-do-header {
@@ -26,42 +26,6 @@
     width: 100%;
     position: relative;
     
-}
-
-.what-we-do-icon {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-left: 38%;
-
-}
-
-.what-we-do-title {
-    font-size: 23px;
-    color: $dark-text;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 8%;
-}
-
-.what-we-do-text-small {
-    margin: 10px 10px 50px;
-    padding: 21px;
-    width: 250px;
-    display: flex;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: $dark-text;
-}
-
-.what-we-do-excel {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    line-height: normal;
-    width: 100%;
-    color: $dark-text;
 }
 
 /* media query for responsiveness */
@@ -79,14 +43,9 @@
     }
     
     .what-we-do-header {
-        font-size: 26px;
+        font-size: 18px;
         
     }
-    
-    .what-we-do-text-small {
-        font-size: 16px;
-    }
-
     
 }
 
@@ -106,9 +65,4 @@
         font-size: 12px;
         
     }
-    
-    .what-we-do-text-small {
-        font-size: 20px;
-    }
-    
 }
