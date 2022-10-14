@@ -17,6 +17,7 @@ import { SlideShowComponent } from './shared/components/slide-show/slide-show.co
 import { WhatWeDoComponent } from './pages/home/components/what-we-do/what-we-do.component';
 import { ProudComponent } from './pages/home/components/proud/proud.component';
 import { WhatWeDoItemComponent } from './pages/home/components/what-we-do/components/what-we-do-item/what-we-do-item.component';
+import { ContactComponent } from './pages/home/components/contact/contact.component';
 import { TechnologiesWeUseComponent } from './pages/home/components/technologies-we-use/technologies-we-use.component';
 import { TechnologiesWeUseItemComponent } from './pages/home/components/technologies-we-use/components/technologies-we-use-item/technologies-we-use-item.component';
 
@@ -28,11 +29,12 @@ import { TechnologiesWeUseItemComponent } from './pages/home/components/technolo
     NavComponent,
     HeaderComponent,
     SlideShowComponent,
-    WhatWeDoComponent,
     ProudComponent,
+    WhatWeDoComponent,
     WhatWeDoItemComponent,
     TechnologiesWeUseComponent,
-    TechnologiesWeUseItemComponent
+    TechnologiesWeUseItemComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
