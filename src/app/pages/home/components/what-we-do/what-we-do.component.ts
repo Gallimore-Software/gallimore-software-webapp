@@ -38,7 +38,7 @@ export class WhatWeDoComponent implements OnInit {
       'Web Apps', 
       '../../../../../../../assets/help.png', 
       'Web App development', 
-      '>We are here to help you with everything from building an e-commerce application to developing the most complex web-based internet applications or social network. We can engineer a system from the ground up, customize open source software, or update your existing application. We can customize everything for you.')
+      'We are here to help you with everything from building an e-commerce application to developing the most complex web-based internet applications or social network. We can engineer a system from the ground up, customize open source software, or update your existing application. We can customize everything for you.')
   ];
   
   constructor() { }
