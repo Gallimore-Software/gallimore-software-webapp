@@ -17,6 +17,7 @@ import { SlideShowComponent } from './shared/components/slide-show/slide-show.co
 import { WhatWeDoComponent } from './pages/home/components/what-we-do/what-we-do.component';
 import { ProudComponent } from './pages/home/components/proud/proud.component';
 import { WhatWeDoItemComponent } from './pages/home/components/what-we-do/components/what-we-do-item/what-we-do-item.component';
+import { TechnologiesWeUseComponent } from './pages/home/components/technologies-we-use/technologies-we-use.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { WhatWeDoItemComponent } from './pages/home/components/what-we-do/compon
     SlideShowComponent,
     WhatWeDoComponent,
     ProudComponent,
-    WhatWeDoItemComponent
+    WhatWeDoItemComponent,
+    TechnologiesWeUseComponent
   ],
   imports: [
     BrowserModule,
