@@ -11,7 +11,7 @@ export class WhatWeDoComponent implements OnInit {
   items = [
     new WhatWeDoItem(
       'Mobile', 
-      '../../../../../assets/custom.png', 
+      '../../../../assets/custom.png', 
       'Mobile app development services', 
       'For businesses of all sizes and industries, we can custom design an application to fit your needs.'),
     new WhatWeDoItem(
