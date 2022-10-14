@@ -3,86 +3,9 @@
         <div>Excel At Quality Software Development</div>
         <div class="technologies-we-use-text">Our work on a project includes software development, testing, support, and maitenance. We build software in time, applying the latest technoliges that optmizes your work processes.</div>
     </div>
-    <div class="technologies-we-use-icons">
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Angular</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">React</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">.NET MVC</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Ruby on Rails</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">WordPress</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Drupal</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Shopify</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Magento</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">.NET Core</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Node.js</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Google Go</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Django</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Amazon AWS</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Heroku</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Google Cloud</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">Microsoft Azure</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">SQL Server</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">MySQL</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">MongoDB</div>
-        </div>
-        <div class="technologies-we-use-borders">
-            <div class="technologies-we-use-icon"></div>
-            <div class="technologies-we-use-title">PostgreSQL</div>
+    <div class="technologies-we-use-icons">        
+        <div class="technologies-we-use-borders" *ngFor="let technology of technologies;">
+            <app-technologies-we-use-item [technology]="technology"></app-technologies-we-use-item>
         </div>
     </div>
 </div>
