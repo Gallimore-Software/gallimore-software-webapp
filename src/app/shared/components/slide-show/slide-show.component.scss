@@ -15,6 +15,7 @@
     margin: 2px;
     cursor: pointer;
     border-radius: 7px;
+    z-index: 10;
 }
 
 .slide-image {
@@ -36,6 +37,7 @@
     color: $light-background!important;
     cursor: pointer;
     padding: 0 20px;
+    z-index: 10;
 }
 
 .arrow-button-container {
