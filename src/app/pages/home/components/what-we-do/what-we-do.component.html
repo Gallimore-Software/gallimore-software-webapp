@@ -3,34 +3,8 @@
         What We Do
     </span>
 </div>
-<div class="what-we-do">
-    <app-what-we-do-item [item]="item[0]"></app-what-we-do-item>
-    <div>
-        <div class="what-we-do-icon"><img src="../../../../assets/desktop.png" alt=""/></div>
-        <div class="what-we-do-title">Desktop Apps</div>
-        <div class="what-we-do-text-small">For businesses of all sizes and industries, we can engineer an  application to fit your needs.</div>
-    </div>
-    <div>
-        <div class="what-we-do-icon"><img src="../../../../assets/software.png" alt="Software icon"/> </div>
-        <div class="what-we-do-title">Software Consulting</div>
-        <div class="what-we-do-text-small">Software consulting is most often used when a company needs an outside, expert opinion regarding a business decision.</div>
-    </div>
-    <div>
-        <div class="what-we-do-icon"><img src="../../../../assets/sbw.png" alt=""/> </div>
-        <div class="what-we-do-title">Small Business Websites</div>
-        <div class="what-we-do-text-small">WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Software consulting is most often used when a company needs an outside, expert opinion regarding a business decision.</div>
-    </div>
-    <div>
-        <div class="what-we-do-icon"><img src="../../../../assets/custom.png" alt=""/> </div>
-        <div class="what-we-do-title">Custom Software</div>        
-        <div class="what-we-do-text-small">We are here to help you with everything from building an e-commerce application to developing the most complex web-based internet applications or social network. We can engineer a system from the ground up, customize open source software, or update your existing application. We can customize everything for you.</div>
-    </div>
-
-    <div>
-        <div class="what-we-do-icon"><img src="../../../../assets/help.png" alt=""/> </div>
-        <div class="what-we-do-title">Web Apps</div>
-        <div class="what-we-do-text-small">We are here to help you with everything from building an e-commerce application to developing the most complex web-based internet applications or social network. We can engineer a system from the ground up, customize open source software, or update your existing application. We can customize everything for you.</div>
-    </div>
+<div class="what-we-do" *ngFor="let item of items;">
+    <app-what-we-do-item [item]="items"></app-what-we-do-item>
 </div>
 <div class="what-we-do-excel">
     <div>
