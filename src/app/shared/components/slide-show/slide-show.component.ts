@@ -6,8 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./slide-show.component.scss']
 })
 export class SlideShowComponent implements OnInit {
-  
+
   slideIndex = 0;
+  textContent = 'We offer high quality business supporting software solutions for small to medium size businesses to fit our customers’ unique needs.';
 
   constructor() { }
 
@@ -24,6 +25,20 @@ export class SlideShowComponent implements OnInit {
 
   show(n) {
     this.slideIndex = n;
+    switch (n) {
+      case 0:
+        this.textContent = 'We offer high quality business supporting software solutions for small to medium size businesses to fit our customers’ unique needs.';
+        break;
+      case 1:
+        this.textContent = 'We offer high quality business supporting software solutions for small to medium size businesses to fit our customers’ unique needs.';
+        break;
+      case 2:
+        this.textContent = 'We offer high quality business supporting software solutions for small to medium size businesses to fit our customers’ unique needs.';
+        break;
+      case 3:
+        this.textContent = 'We offer high quality business supporting software solutions for small to medium size businesses to fit our customers’ unique needs.';
+        break;
+    }
   }
 
   getBackgroundColor(n) {
