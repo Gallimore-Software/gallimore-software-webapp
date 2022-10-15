@@ -3,12 +3,14 @@
 .what-we-do-container {
     display: flex;
     line-height: normal;
-    background-color: $dark-background;
     padding: 50px 0;
     width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.what-we-do {
+.items {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -17,9 +19,9 @@
 }
 
 .what-we-do-header {
-    font-size: 22px;
+    font-size: 36px;
     font-weight: bold;
-    color: $light-text;
+    color: $dark-text;
     text-align: center;
     line-height: normal;
     width: 100%;
@@ -33,7 +35,7 @@
         padding: 35px 0;  
     }
     
-    .what-we-do {
+    .items {
         padding: 20px 0;    
     }
     
@@ -47,7 +49,7 @@
         padding: 35px 0; 
     }
     
-    .what-we-do {
+    .items {
         padding: 20px 0;
     }
     
