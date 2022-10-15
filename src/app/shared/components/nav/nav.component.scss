@@ -1,31 +1,31 @@
 @import '../../../../styles/general';
 
 mat-toolbar-row {
-  padding: 0 30px;
-  margin-top: 15px;
+    padding: 0 30px;
+    margin-top: 15px;
 }
 
 .title {
-  color: $dark-text;
-  font-size: 30px;
+    color: $dark-text;
+    font-size: 30px;
 }
 
 .nav-item {
-  @media (max-width: $small-breakpoint-width) {
-    display: none;
-  }
+    @media (max-width: $small-breakpoint-width) {
+        display: none;
+    }
 }
 
 .hamburger {
-  display: none;
+    display: none;
 
-  @media (max-width: $small-breakpoint-width) {
-    display: flex;
-  }
+    @media (max-width: $small-breakpoint-width) {
+        display: flex;
+    }
 }
 
 .fill-remaining-space {
-  @media (max-width: $small-breakpoint-width) {
-    display: none;
-  }
+    @media (max-width: $small-breakpoint-width) {
+        display: none;
+    }
 }
