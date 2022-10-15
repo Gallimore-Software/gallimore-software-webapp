@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
 
 @Component({
@@ -8,11 +9,15 @@ import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
 })
 export class NavComponent {
 
-  constructor(public componentPageTitle: ComponentPageTitle) { }
+  constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
 
   @Output() toggleSidenav = new EventEmitter<null>();
 
   getTitle() {
     return this.componentPageTitle.title;
+  }
+
+  route(page) {
+    this.router.navigate([page]);
   }
 }
