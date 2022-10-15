@@ -7,7 +7,10 @@
   </span>
   <span class="title nav-item" focusOnNavigation>{{getTitle()}}</span>
   <span class="fill-remaining-space nav-item"></span>
-  <button mat-button color="primary" class="nav-item">About Us</button>
-  <button mat-button color="primary" class="nav-item">What We Do</button>
-  <button mat-raised-button color="primary" class="nav-item">Contact</button>
+  <button (click)="route('home')" mat-button color="primary" class="nav-item">Home</button>
+  <button (click)="route('services')" mat-button color="primary" class="nav-item">Services</button>
+  <button (click)="route('technologies')" mat-button color="primary" class="nav-item">Technologies</button>
+  <button (click)="route('projects')" mat-button color="primary" class="nav-item">Projects</button>
+  <button (click)="route('about')" mat-button color="primary" class="nav-item">About Us</button>
+  <button (click)="route('contact')" mat-raised-button color="primary" class="nav-item">Contact</button>
 </mat-toolbar-row>

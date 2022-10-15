@@ -1,4 +1,4 @@
-@import '../../../../../../../styles/general';
+@import '../../../styles/general';
 
 .technologies-we-use-container {
     font-size: 25px;
@@ -13,13 +13,15 @@
 .technologies-we-use-text {
     padding-top: 2%;
     font-size: 20px;
+    margin: 0 6%;
 }
 
 .technologies-we-use-title {
+    padding-top: 2%;
     font-size: 20px;
     margin: 10px 10px 50px;
+    padding: 21px;
     width: 250px;
-    display: flow-root;
 }
 
 .technologies-we-use-icons {
@@ -36,10 +38,4 @@
     background: transparent;
     border: 2px solid #002687;
     border-radius: 6px;
-}
-
-.technologies-box {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
 }

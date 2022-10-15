@@ -1,4 +1,4 @@
-@import '../../../../../styles/general';
+@import '../../../styles/general';
 
 .about-us-container {
     margin-top: 10%;
@@ -36,7 +36,6 @@
     .small-text {
         font-size: 20px;
     }
-
 }
 
 @media screen and (max-width: 760px) {
@@ -53,8 +52,7 @@
     .small-text {
         font-size: 16px;
         padding-top: 2%;
-    }
-   
+    } 
 }
 
 @media screen and (max-width: 460px) {
