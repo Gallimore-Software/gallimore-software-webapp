@@ -1,5 +1,15 @@
 <div>
-    <div class="what-we-do-icon"><img [src]="item.imageUrl" [alt]="item.imageDescription"></div>
-    <div class="what-we-do-title">{{item.name}}</div>
-    <div class="what-we-do-text-small">{{item.textContent}}</div>
+    <mat-expansion-panel #panel mouseEnterLeaveDebounce hideToggle
+    (debounceMouseEnter)="panel.open()"
+    (debounceMouseLeave)="panel.close()">
+        <mat-expansion-panel-header>
+            <div class="header-content">
+                <div class="what-we-do-icon"><img [src]="item.imageUrl" [alt]="item.imageDescription"></div>
+                <div class="what-we-do-title">{{item.name}}</div>
+            </div>
+        </mat-expansion-panel-header>
+        <mat-panel-description>
+            <div class="what-we-do-text-small">{{item.textContent}}</div>
+        </mat-panel-description>
+    </mat-expansion-panel>
 </div>
