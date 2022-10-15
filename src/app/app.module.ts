@@ -22,6 +22,8 @@ import { TechnologiesWeUseItemComponent } from './pages/technologies-we-use/comp
 import { WhatWeDoItemComponent } from './pages/what-we-do/components/what-we-do-item/what-we-do-item.component';
 import { WhatWeDoComponent } from './pages/what-we-do/what-we-do.component';
 import { IntroComponent } from './pages/home/components/intro/intro.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MouseEnterLeaveDebounceDirective } from './shared/directives/mouse-enter-leave-debounce.directive';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import { IntroComponent } from './pages/home/components/intro/intro.component';
     TechnologiesWeUseItemComponent,
     ContactComponent,
     ProjectsComponent,
-    IntroComponent
+    IntroComponent,
+    MouseEnterLeaveDebounceDirective
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import { IntroComponent } from './pages/home/components/intro/intro.component';
     MatToolbarModule,
     AppRoutingModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatExpansionModule,
   ],
   providers: [ComponentPageTitle],
   bootstrap: [AppComponent]

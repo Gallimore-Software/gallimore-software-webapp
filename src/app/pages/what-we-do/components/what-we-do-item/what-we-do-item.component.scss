@@ -58,3 +58,19 @@
         font-size: 10px;
     }
 }
+
+.mat-expansion-panel {
+    box-shadow: none !important;
+}
+
+.mat-expansion-panel-header {
+    height: 100% !important;
+}
+
+.header-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+}
