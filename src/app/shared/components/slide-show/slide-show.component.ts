@@ -30,8 +30,10 @@ export class SlideShowComponent implements OnInit {
         this.textContent = 'We offer high quality business supporting software solutions, for small to medium size businesses, to fit our customers\' unique needs.';
         break;
       case 1:
+        this.textContent = "No bullshit, just good quality code, written for you -- by us, with business goals in mind."
         break;
       case 2:
+        this.textContent = "We would love to schedule a meeting with you today. Whatever it is, we can do it."
         break;
       case 3:
         break;
