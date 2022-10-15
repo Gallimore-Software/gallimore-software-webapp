@@ -22,7 +22,7 @@ export class WhatWeDoComponent implements OnInit {
     new WhatWeDoItem(
       'Software Consulting', 
       '../../../../../assets/software.png', 
-      'Mobile app development services', 
+      'Software consulting', 
       'Software consulting is most often used when a company needs an outside, expert opinion regarding a business decision.'),
     new WhatWeDoItem(
       'Small Business Websites', 

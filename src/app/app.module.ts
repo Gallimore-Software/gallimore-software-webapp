@@ -9,17 +9,19 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { AboutUsComponent } from './pages/home/components/about-us/about-us.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { NavComponent } from './shared/components/nav/nav.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { ComponentPageTitle } from './shared/services/page-title/page-title';
 import { SlideShowComponent } from './shared/components/slide-show/slide-show.component';
-import { WhatWeDoComponent } from './pages/home/components/what-we-do/what-we-do.component';
 import { ProudComponent } from './pages/home/components/proud/proud.component';
-import { WhatWeDoItemComponent } from './pages/home/components/what-we-do/components/what-we-do-item/what-we-do-item.component';
-import { ContactComponent } from './pages/home/components/contact/contact.component';
-import { TechnologiesWeUseComponent } from './pages/home/components/technologies-we-use/technologies-we-use.component';
-import { TechnologiesWeUseItemComponent } from './pages/home/components/technologies-we-use/components/technologies-we-use-item/technologies-we-use-item.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { TechnologiesWeUseComponent } from './pages/technologies-we-use/technologies-we-use.component';
+import { TechnologiesWeUseItemComponent } from './pages/technologies-we-use/components/technologies-we-use-item/technologies-we-use-item.component';
+import { WhatWeDoItemComponent } from './pages/what-we-do/components/what-we-do-item/what-we-do-item.component';
+import { WhatWeDoComponent } from './pages/what-we-do/what-we-do.component';
+import { IntroComponent } from './pages/home/components/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { TechnologiesWeUseItemComponent } from './pages/home/components/technolo
     WhatWeDoItemComponent,
     TechnologiesWeUseComponent,
     TechnologiesWeUseItemComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectsComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,

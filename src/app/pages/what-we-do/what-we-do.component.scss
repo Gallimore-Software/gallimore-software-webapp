@@ -1,15 +1,16 @@
-@import '../../../../../styles/general';
+@import '../../../styles/general';
 
 .what-we-do-container {
     display: flex;
     line-height: normal;
-    background-color: $dark-background;
     padding: 50px 0;
     width: 100%;
-    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.what-we-do {
+.items {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -18,51 +19,41 @@
 }
 
 .what-we-do-header {
-    font-size: 22px;
+    font-size: 36px;
     font-weight: bold;
-    color: $light-text;
+    color: $dark-text;
     text-align: center;
     line-height: normal;
     width: 100%;
     position: relative;
-    
 }
 
 /* media query for responsiveness */
 
 @media screen and (max-width: 760px) {
     .what-we-do-container {
-        padding: 35px 0;
-        
+        padding: 35px 0;  
     }
     
-    .what-we-do {
-        padding: 20px 0;
-
-        
+    .items {
+        padding: 20px 0;    
     }
     
     .what-we-do-header {
-        font-size: 18px;
-        
+        font-size: 18px;  
     }
-    
 }
 
 @media screen and (max-width: 400px) {
     .what-we-do-container {
-        padding: 35px 0;
-        
+        padding: 35px 0; 
     }
     
-    .what-we-do {
+    .items {
         padding: 20px 0;
-
-        
     }
     
     .what-we-do-header {
-        font-size: 12px;
-        
+        font-size: 12px;   
     }
 }
