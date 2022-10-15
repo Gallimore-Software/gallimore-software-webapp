@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gallimore-software-site';
+  hideRouterOutlet = false;
+
+  onShowSidenav() {
+    if (this.hideRouterOutlet) {
+      this.hideRouterOutlet = false;
+    } else {
+      this.hideRouterOutlet = true;
+    }
+  }
 }
