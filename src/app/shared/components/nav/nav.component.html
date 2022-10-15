@@ -2,9 +2,9 @@
   <button mat-button class="hamburger" (click)="toggleSidenav.emit()">
     <mat-icon color="primary">menu</mat-icon>
   </button>
-  <span class="logo nav-item">
+  <button (click)="route('home')" class="logo nav-item">
     <img src="../../../../assets/gallimore-software-logo.svg">
-  </span>
+  </button>
   <span class="title nav-item" focusOnNavigation>{{getTitle()}}</span>
   <span class="fill-remaining-space nav-item"></span>
   <button (click)="route('home')" mat-button color="primary" class="nav-item">Home</button>
