@@ -7,18 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gallimore-software-site';
-  hideRouterOutlet = false;
+  showContent = true;
 
-  onShowSidenav() {
-    if (this.hideRouterOutlet) {
-      this.hideRouterOutlet = false;
-    } else {
-      this.hideRouterOutlet = true;
-    }
-  }
-
-  Opened = true;
-  toggle() {
-    this.Opened = !this.Opened;
+  onToggleSidenav() {
+    this.showContent = !this.showContent;
   }
 }

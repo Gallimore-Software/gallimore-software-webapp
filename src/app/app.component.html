@@ -1,4 +1,3 @@
 <app-header></app-header>
-<app-nav (show)="onShowSidenav()"></app-nav>
-<app-sidenav [opened]="Opened"></app-sidenav>
-<router-outlet [hidden]="hideRouterOutlet"></router-outlet>
+<app-nav (toggleSidenav)="onToggleSidenav()"></app-nav>
+<router-outlet [hidden]="!showContent"></router-outlet>
