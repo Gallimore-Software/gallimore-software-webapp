@@ -11,12 +11,19 @@ export class NavComponent {
 
   @Output() toggleSidenav: EventEmitter<any> = new EventEmitter();
 
-  public showSideNav = false;
+  public showSidenav = false;
 
   constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
 
-  onClickSidenav() {
-    this.showSideNav = !this.showSideNav;
-    this.toggleSidenav.emit();
+  onOpenSidenav() {
+    console.log('onOpenSidenav');
+    this.showSidenav = !this.showSidenav;
+    this.toggleSidenav.emit(this.showSidenav);
+  }
+
+  onCloseSidenav() {
+    console.log('onOpenSidenav');
+    this.showSidenav = !this.showSidenav;
+    this.toggleSidenav.emit(this.showSidenav);
   }
 }

@@ -1,2 +1,2 @@
-<app-header-nav (clickSidenav)="onClickSidenav()" [hidden]="showSideNav"></app-header-nav>
-<app-sidenav [hidden]="!showSideNav" [opened]="showSideNav"></app-sidenav>
+<app-header-nav [hidden]="showSidenav" (open)="onOpenSidenav()"></app-header-nav>
+<app-sidenav [hidden]="!showSidenav" (close)="onCloseSidenav()" [opened]="showSidenav"></app-sidenav>

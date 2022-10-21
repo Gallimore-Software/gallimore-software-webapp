@@ -12,5 +12,9 @@ export class SidenavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
+  onClose() {
+    console.log('onClose');
+    this.opened = false;
+  }
 }
