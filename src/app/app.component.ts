@@ -10,6 +10,7 @@ export class AppComponent {
   showContent = true;
 
   onToggleSidenav() {
+    console.log('onToggleSidenav');
     this.showContent = !this.showContent;
   }
 }

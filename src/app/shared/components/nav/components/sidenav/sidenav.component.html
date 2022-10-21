@@ -1,7 +1,9 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="side" [opened]="opened" opened>
     <div class="container">
-      <h3>Sidenav</h3>
+      <div (click)="onClose()">
+        <mat-icon>close</mat-icon>
+      </div>
     </div>
   </mat-sidenav>
 </mat-sidenav-container>
