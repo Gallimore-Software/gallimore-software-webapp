@@ -11,7 +11,7 @@ export class NavComponent {
 
   constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
 
-  @Output() toggleSidenav = new EventEmitter<null>();
+  @Output() toggleSidenav: EventEmitter<any> = new EventEmitter();
 
   getTitle() {
     return this.componentPageTitle.title;
@@ -20,4 +20,9 @@ export class NavComponent {
   route(page) {
     this.router.navigate([page]);
   }
+
+  emit() {
+    this.toggleSidenav.emit(null);
+}
+
 }
