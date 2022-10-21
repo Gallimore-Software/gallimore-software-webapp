@@ -6,6 +6,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { TechnologiesWeUseComponent } from './pages/technologies-we-use/technologies-we-use.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { WhatWeDoComponent } from './pages/what-we-do/what-we-do.component';
+import { MatSidenavModule } from '@angular/material/sidenav'
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -18,7 +19,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes), 
+    MatSidenavModule],
+  exports: [RouterModule, 
+    MatSidenavModule]
 })
 export class AppRoutingModule { }
