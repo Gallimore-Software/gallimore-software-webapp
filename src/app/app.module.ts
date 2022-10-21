@@ -24,7 +24,8 @@ import { WhatWeDoComponent } from './pages/what-we-do/what-we-do.component';
 import { IntroComponent } from './pages/home/components/intro/intro.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MouseEnterLeaveDebounceDirective } from './shared/directives/mouse-enter-leave-debounce.directive';
-import { SidenavComponent } from './shared/components/sidenav/sidenav.component';
+import { SidenavComponent } from './shared/components/nav/components/sidenav/sidenav.component';
+import { HeaderNavComponent } from './shared/components/nav/components/header-nav/header-nav.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { SidenavComponent } from './shared/components/sidenav/sidenav.component'
     IntroComponent,
     MouseEnterLeaveDebounceDirective,
     SidenavComponent,
+    HeaderNavComponent,
   ],
   imports: [
     BrowserModule,
