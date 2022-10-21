@@ -16,4 +16,9 @@ export class AppComponent {
       this.hideRouterOutlet = true;
     }
   }
+
+  Opened = true;
+  toggle() {
+    this.Opened = !this.Opened;
+  }
 }
