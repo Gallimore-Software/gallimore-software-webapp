@@ -13,6 +13,8 @@ export class NavComponent {
 
   public showSidenav = false;
 
+  public navItems = ['home', 'projects', 'contact', 'technologies', 'about', 'services'];
+
   constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
 
   onOpenSidenav() {

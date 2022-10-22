@@ -7,6 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
   @Input() opened = true;
+  @Input() navItems = [];
   @Output() close = new EventEmitter<null>();
 
   constructor() { }
