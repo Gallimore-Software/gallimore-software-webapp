@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
 
@@ -9,6 +9,7 @@ import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
 })
 export class HeaderNavComponent implements OnInit {
 
+  @Input() navItems = [];
   @Output() openSidenav: EventEmitter<any> = new EventEmitter();
 
   constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }

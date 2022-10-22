@@ -7,10 +7,7 @@
   </button>
   <span class="title nav-item" focusOnNavigation>{{getTitle()}}</span>
   <span class="fill-remaining-space nav-item"></span>
-  <button (click)="route('home')" mat-button color="primary" class="nav-item">Home</button>
-  <button (click)="route('services')" mat-button color="primary" class="nav-item">Services</button>
-  <button (click)="route('technologies')" mat-button color="primary" class="nav-item">Technologies</button>
-  <button (click)="route('projects')" mat-button color="primary" class="nav-item">Projects</button>
-  <button (click)="route('about')" mat-button color="primary" class="nav-item">About Us</button>
-  <button (click)="route('contact')" mat-raised-button color="primary" class="nav-item">Contact</button>
+  <div *ngFor="let item of navItems">
+    <button (click)="route(item)" mat-button color="primary" class="nav-item">{{item}}</button>
+  </div>
 </mat-toolbar-row>

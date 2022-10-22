@@ -3,10 +3,20 @@ mat-sidenav-container {
 }
 
 mat-sidenav {
-  background-color: #ccc;
+  background-color: #002687;
   width: 100%;
 }
 
 mat-sidenav-content {
   padding: 10px;
+}
+
+.close-icon {
+  color: white;
+  margin-top: 35px;
+  margin-left: 47px;
+}
+
+.nav-item {
+  color: white;
 }
