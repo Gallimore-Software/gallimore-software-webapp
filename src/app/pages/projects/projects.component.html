@@ -1,1 +1,12 @@
-Projects page works!
+<div class="projects-container">
+  <div>
+    <div>We Excel At Quality Software Development</div>
+    <div class="projects-text">Our work on a project includes software development, testing, support, and
+      maintenance. We build software on time, with the latest projects.</div>
+  </div>
+  <div class="projects-icons">
+    <div class="projects-borders" *ngFor="let project of projects;">
+      <app-project [project]="project"></app-project>
+    </div>
+  </div>
+</div>
