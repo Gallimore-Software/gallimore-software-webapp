@@ -11,9 +11,8 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   public projects: Array<Project> = [
-    new Project('Inventory Manager', 'Manager your inventory in Angular', 'https://gallimoresoftware.com/inventory-manager', ''),
-    new Project('Inventory Manager', 'Manager your inventory in Angular', 'https://gallimoresoftware.com/inventory-manager', ''),
-    new Project('Inventory Manager', 'Manager your inventory in Angular', 'https://gallimoresoftware.com/inventory-manager', '')
+    new Project('Inventory Manager', 'Manage your inventory using a custom Angular app', 'https://github.com/nfgallimore/InventoryApp', ''),
+    new Project('Timesheet Manager', 'Manage your timesheets with this Angular app', 'https://github.com/nfgallimore/Timesheet', ''),
   ];
 
   ngOnInit(): void {

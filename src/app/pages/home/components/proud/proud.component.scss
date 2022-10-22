@@ -1,58 +1,58 @@
 @import '../../../../../styles/general';
 
 .proud-container {
-    display: flex;
-    line-height: normal;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    justify-content: center;
+  display: flex;
+  line-height: normal;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .proud-text {
-    font-size: 60px;
-    font-weight: bold;
-    color: $dark-text;
-    text-align: left;
-    padding-top: 1%;
-    padding-bottom: 3%;
+  font-size: 48px;
+  font-weight: bold;
+  color: $dark-text;
+  text-align: left;
+  padding-top: 1%;
+  padding-bottom: 3%;
 }
 
 /* media query for responsiveness */
 
 @media screen and (max-width: 1269px) {
-    .proud-text {
-        font-size: 43px;
-    }
+  .proud-text {
+    font-size: 43px;
+  }
 }
 
 @media screen and (max-width: 849px) {
-    .proud-container {
-        margin-bottom: 25px;
-    }
-    
-    .proud-text {
-        font-size: 27px;
-    }
+  .proud-container {
+    margin-bottom: 25px;
+  }
+
+  .proud-text {
+    font-size: 27px;
+  }
 }
 
 @media screen and (max-width: 533px) {
-    .proud-container {
-        margin-bottom: 15px;
-    }
-    
-    .proud-text {
-        font-size: 16.7px;
-        text-align: center;
-    }
+  .proud-container {
+    margin-bottom: 15px;
+  }
+
+  .proud-text {
+    font-size: 16.7px;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 330px) {    
-    .proud-container {
-        margin-bottom: 8px;
-    }
-    
-    .proud-text {
-        font-size: 10px;
-        text-align: center;
-    }
+@media screen and (max-width: 330px) {
+  .proud-container {
+    margin-bottom: 8px;
+  }
+
+  .proud-text {
+    font-size: 10px;
+    text-align: center;
+  }
 }
