@@ -1,3 +1,4 @@
+import { NavItem } from './models/nav-item';
 import { Component, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
@@ -13,7 +14,14 @@ export class NavComponent {
 
   public showSidenav = false;
 
-  public navItems = ['home', 'projects', 'contact', 'technologies', 'about', 'services'];
+  public navItems = [
+    new NavItem('home'),
+    new NavItem('projects'),
+    new NavItem('contact'),
+    new NavItem('technologies'),
+    new NavItem('about'),
+    new NavItem('services')
+  ];
 
   constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
 
