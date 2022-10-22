@@ -1,4 +1,16 @@
 app-slide-show {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.devs {
+  width: 25%;
+  height: 25%;
+}
+
+#home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

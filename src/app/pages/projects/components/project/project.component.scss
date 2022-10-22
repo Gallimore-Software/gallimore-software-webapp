@@ -1,21 +1,22 @@
 @import '../../../../../styles/general';
 
 .project-title {
-    font-size: 20px;
-    margin: 10px 10px 50px;
-    width: 250px;
-    display: flow-root;
+  font-size: 20px;
+  margin: 10px 10px 50px;
+  width: 250px;
+  display: flow-root;
 }
 
 .project-description {
-    font-size: 20px;
-    margin: 10px 10px 50px;
-    width: 250px;
-    display: flow-root;
+  font-size: 20px;
+  margin: 10px 10px 50px;
+  width: 250px;
+  display: flow-root;
 }
 
 .project-box {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  cursor: pointer;
 }
