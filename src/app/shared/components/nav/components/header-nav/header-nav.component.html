@@ -8,6 +8,6 @@
   <span class="title nav-item" focusOnNavigation>{{getTitle()}}</span>
   <span class="fill-remaining-space nav-item"></span>
   <div *ngFor="let item of navItems">
-    <button (click)="route(item)" mat-button color="primary" class="nav-item">{{item}}</button>
+    <button (click)="route(item.route)" mat-button color="primary" class="nav-item">{{item.name}}</button>
   </div>
 </mat-toolbar-row>
