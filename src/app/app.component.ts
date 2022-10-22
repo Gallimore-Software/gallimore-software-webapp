@@ -9,8 +9,8 @@ export class AppComponent {
   title = 'gallimore-software-site';
   showContent = true;
 
-  onToggleSidenav() {
-    console.log('onToggleSidenav');
-    this.showContent = !this.showContent;
+  onSidenavToggled(showingSidenav: boolean) {
+    console.log('onSidenavToggled : app, showingSidenav:', showingSidenav);
+    this.showContent = !showingSidenav;
   }
 }
