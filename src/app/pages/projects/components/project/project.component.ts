@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Project } from '../../models/project';
 
 @Component({
@@ -8,11 +9,15 @@ import { Project } from '../../models/project';
 })
 export class ProjectComponent implements OnInit {
 
-  @Input() project : Project = new Project('', '', '', '')
+  @Input() project: Project = new Project('', '', '', '')
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigate(project: Project) {
+    window.location.href = project.url;
   }
 
 }

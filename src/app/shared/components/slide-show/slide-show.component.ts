@@ -10,12 +10,11 @@ import { startWith } from 'rxjs/operators';
 export class SlideShowComponent implements OnInit {
 
   slideIndex = 0;
-  textContent = 'We offer high quality business supporting software solutions, for small to medium size businesses, to fit our customers\' unique needs.';
-
+  textContent = ''
   constructor() { }
 
   ngOnInit(): void {
-
+    this.show(0);
   }
 
   next() {
@@ -32,13 +31,13 @@ export class SlideShowComponent implements OnInit {
     this.slideIndex = n;
     switch (n) {
       case 0:
-        this.textContent = 'We offer high quality software solutions for small to medium size businesses.';
+        this.textContent = 'We offer high quality software solutions for small to medium size businesses, to fit our customers\' unique needs.';
         break;
       case 1:
         this.textContent = "Good quality code, written for you -- by us, with business goals in mind."
         break;
       case 2:
-        this.textContent = "We would love to schedule a meeting with you today. Whatever it is, we can do it."
+        this.textContent = "We would love to work with you, please reach out."
         break;
       case 3:
         this.textContent = "Thank you for viewing our site. Come back anytime, updates come frequently!"
