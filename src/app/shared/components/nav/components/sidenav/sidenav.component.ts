@@ -24,7 +24,7 @@ export class SidenavComponent implements OnInit {
 
   route(page) {
     if (page == 'contact') {
-      window.location.href = 'mailto:nick@gallimoresoftware.com';
+      window.open('mailto:nick@gallimoresoftware.com');
     } else {
       this.router.navigate([page]);
       this.onClose();
