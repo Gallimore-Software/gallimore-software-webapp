@@ -1,3 +1,4 @@
+import { MaterialModule } from './material.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -50,11 +51,8 @@ import { HeaderNavComponent } from './shared/components/nav/components/header-na
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
     AppRoutingModule,
-    MatIconModule,
-    MatButtonModule,
-    MatExpansionModule,
+    MaterialModule
   ],
   providers: [ComponentPageTitle],
   bootstrap: [AppComponent]

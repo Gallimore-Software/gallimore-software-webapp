@@ -1,9 +1,10 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav mode="side" [opened]="opened" opened>
-    <div class="container">
-      <div (click)="onClose()">
-        <mat-icon>close</mat-icon>
-      </div>
+  <mat-sidenav #sidenav mode="side" [opened]="opened">
+    <div class="close-icon" (click)="onClose()">
+      <mat-icon>close</mat-icon>
     </div>
+    <mat-nav-list>
+      <a class="nav-item" mat-list-item routerLink="." *ngFor="let nav of navItems">{{nav}}</a>
+    </mat-nav-list>
   </mat-sidenav>
 </mat-sidenav-container>
