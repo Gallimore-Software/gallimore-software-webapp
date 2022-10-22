@@ -52,7 +52,7 @@
   position: absolute;
   justify-content: start;
   line-height: normal;
-  bottom: 70%;
+  bottom: 80%;
   display: flex;
   flex-wrap: wrap;
   color: $light-background !important;
@@ -61,38 +61,59 @@
 }
 
 .big-text {
-  font-size: 95px;
+  font-size: 64px;
   font-weight: bold;
   display: flex;
+  padding-top: 10%;
   padding-bottom: 2%;
 }
 
 .small-text {
   font-size: 36px;
+  width: 90%;
+}
+
+@media screen and (max-width: 1300px) {
+  .small-text {
+    font-size: 34px;
+  }
+
+  .slideshow-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media screen and (max-width: 1108px) {
   .big-text {
-    font-size: 65px;
+    padding-top: 16%;
+    font-size: 32px;
     padding-bottom: 2%;
   }
 
   .small-text {
-    font-size: 30px;
+    font-size: 18px;
+  }
+
+  .slideshow-container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media screen and (max-width: 760px) {
-  .slideshow-container {
-    padding: 8%;
-    margin: 10px 20px;
-  }
-
   .badge {
     height: 8px;
     width: 8px;
     margin: 1px;
     border-radius: 5px;
+  }
+
+  .slideshow-container {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .arrow-button {
@@ -105,58 +126,37 @@
 
   .text-container {
     padding: 0 10%;
-    bottom: 76%;
+    bottom: 84%;
     padding-left: 2%;
   }
 
   .big-text {
     font-size: 28px;
-    padding-bottom: 2%;
   }
 
   .small-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 600px) {
   .slideshow-container {
-    padding: 5%;
-    margin: 4%;
-  }
-
-  .arrow-button {
-    padding: 0 3%;
-  }
-
-  .about-us-container {
-    margin-top: 0;
-    padding: 0;
-  }
-
-  .text-container {
-    padding: 0 8%;
-    bottom: 79%;
-    padding-left: 2%;
-  }
-
-  .big-text {
-    font-size: 16px;
-    padding-bottom: 1%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .small-text {
     font-size: 10px;
-    padding-top: 5%;
+  }
+
+  .big-text {
+    font-size: 22px;
   }
 }
 
-@media screen and (max-width: 330px) {
-  .slideshow-container {
-    padding: 5%;
-    margin: 4%;
-  }
-
+@media screen and (max-width: 460px) {
   .arrow-button {
     padding: 0 3%;
   }
@@ -166,19 +166,26 @@
     padding: 0;
   }
 
-  .text-container {
-    padding: 0 8%;
-    bottom: 81%;
-    padding-left: 2%;
-  }
-
   .big-text {
-    font-size: 9px;
-    padding-bottom: 1%;
+    font-size: 16px;
   }
 
   .small-text {
-    font-size: 6px;
-    padding-top: 5%;
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .big-text {
+    font-size: 13px;
+    margin-top: 13%;
+  }
+
+  .small-text {
+    padding-top: 1%;
+  }
+
+  .text-container {
+    bottom: 87%;
   }
 }

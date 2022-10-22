@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Observable } from 'rxjs';
+import { startWith } from 'rxjs/operators';
 
 @Component({
   selector: 'app-slide-show',
@@ -13,6 +15,7 @@ export class SlideShowComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
   next() {
