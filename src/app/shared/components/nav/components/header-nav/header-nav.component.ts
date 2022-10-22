@@ -9,7 +9,7 @@ import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
 })
 export class HeaderNavComponent implements OnInit {
 
-  @Output() clickSidenav: EventEmitter<any> = new EventEmitter();
+  @Output() openSidenav: EventEmitter<any> = new EventEmitter();
 
   constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
 
@@ -24,7 +24,8 @@ export class HeaderNavComponent implements OnInit {
     this.router.navigate([page]);
   }
 
-  emit() {
-    this.clickSidenav.emit(null);
+  onOpenSidenav() {
+    console.log('onOpenSidenav : header-nav');
+    this.openSidenav.emit(null);
   }
 }

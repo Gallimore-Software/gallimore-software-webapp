@@ -1,3 +1,5 @@
 <app-header></app-header>
-<app-nav (onChange)="onToggleSidenav($event)"></app-nav>
-<router-outlet [hidden]="!showContent"></router-outlet>
+<app-nav (sidenavToggled)="onSidenavToggled($event)"></app-nav>
+<div *ngIf="showContent">
+  <router-outlet></router-outlet>
+</div>
