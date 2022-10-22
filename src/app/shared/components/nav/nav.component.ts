@@ -9,21 +9,21 @@ import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
 })
 export class NavComponent {
 
-  @Output() toggleSidenav: EventEmitter<any> = new EventEmitter();
+  @Output() sidenavToggled: EventEmitter<boolean> = new EventEmitter();
 
   public showSidenav = false;
 
   constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
 
   onOpenSidenav() {
-    console.log('onOpenSidenav');
-    this.showSidenav = !this.showSidenav;
-    this.toggleSidenav.emit(this.showSidenav);
+    console.log('onOpenSidenav : nav');
+    this.showSidenav = true;
+    this.sidenavToggled.emit(this.showSidenav);
   }
 
   onCloseSidenav() {
-    console.log('onOpenSidenav');
-    this.showSidenav = !this.showSidenav;
-    this.toggleSidenav.emit(this.showSidenav);
+    console.log('onCloseSidenav : nav');
+    this.showSidenav = false;
+    this.sidenavToggled.emit(this.showSidenav);
   }
 }
