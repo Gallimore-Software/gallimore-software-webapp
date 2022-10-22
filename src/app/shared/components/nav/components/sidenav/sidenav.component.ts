@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -10,7 +11,7 @@ export class SidenavComponent implements OnInit {
   @Input() navItems = [];
   @Output() close = new EventEmitter<null>();
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -19,5 +20,10 @@ export class SidenavComponent implements OnInit {
     console.log('onClose : sidenav');
     this.opened = false;
     this.close.emit();
+  }
+
+  route(page) {
+    this.router.navigate([page]);
+    this.onClose();
   }
 }
