@@ -19,7 +19,15 @@ mat-sidenav-content {
 }
 
 .nav-item {
-  color: white;
+  a {
+    color: white;
+  }
+
   cursor: pointer;
   margin-left: 50px;
+  margin-right: 50px;
+}
+
+mat-divider {
+  background-color: white;
 }

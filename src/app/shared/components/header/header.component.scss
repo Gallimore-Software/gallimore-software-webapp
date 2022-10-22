@@ -1,13 +1,33 @@
 @import '../../../../styles/general';
 
 .title {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .page-title {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .icon-wrapper {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+#logo {
+  display: none;
+}
+
+#logo-container {
+  background-color: $dark-background;
+}
+
+@media only screen and (max-width: 960px) {
+  #logo {
+    display: flex;
+    height: 90%;
+    width: 90%;
+  }
+
+  .icon-wrapper {
+    display: none;
+  }
 }
