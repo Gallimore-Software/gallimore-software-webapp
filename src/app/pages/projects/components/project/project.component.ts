@@ -17,7 +17,7 @@ export class ProjectComponent implements OnInit {
   }
 
   navigate(project: Project) {
-    window.location.href = project.url;
+    window.open(project.url);
   }
 
 }
