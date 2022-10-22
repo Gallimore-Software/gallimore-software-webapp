@@ -22,7 +22,11 @@ export class HeaderNavComponent implements OnInit {
   }
 
   route(page) {
-    this.router.navigate([page]);
+    if (page == 'contact') {
+      window.location.href = 'mailto:nick@gallimoresoftware.com';
+    } else {
+      this.router.navigate([page]);
+    }
   }
 
   onOpenSidenav() {
