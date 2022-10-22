@@ -16,11 +16,11 @@ export class NavComponent {
 
   public navItems = [
     new NavItem('home'),
-    new NavItem('projects'),
-    new NavItem('contact'),
-    new NavItem('technologies'),
     new NavItem('about'),
-    new NavItem('services')
+    new NavItem('technologies'),
+    new NavItem('projects'),
+    new NavItem('services'),
+    new NavItem('contact'),
   ];
 
   constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
