@@ -23,7 +23,11 @@ export class SidenavComponent implements OnInit {
   }
 
   route(page) {
-    this.router.navigate([page]);
-    this.onClose();
+    if (page == 'contact') {
+      window.location.href = 'mailto:nick@gallimoresoftware.com';
+    } else {
+      this.router.navigate([page]);
+      this.onClose();
+    }
   }
 }
