@@ -20,4 +20,8 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  click() {
+    console.log(this.contactForm.value);
+  }
+
 }
