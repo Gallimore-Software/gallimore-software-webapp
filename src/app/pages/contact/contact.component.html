@@ -18,16 +18,22 @@
                 <mat-label>WHAT IS YOUR PHONE NUMBER?</mat-label>
                 <input formControlName="phone" matInput placeholder="WHAT IS YOUR PHONE NUMBER?">
             </mat-form-field>
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="fill" id="message-us">
                 <mat-label>MESSAGE</mat-label>
                 <textarea formControlName="message" matInput></textarea>
             </mat-form-field>
+            <button type="button" (click)="click()">Submit</button>
         </form>
-    </div>
-    <div class="contact-info-container">
-        <div class="contact-title">
-            Contact Us
+        <div class="contact-info-container">
+            <div>
+                Contact Us
+            </div>    
+            <div>
+                Call Us
+            </div>
+            <div>
+                Mail Us
+            </div>
         </div>
     </div>
-    <button type="button" (click)="click()">Submit</button>
 </div>
