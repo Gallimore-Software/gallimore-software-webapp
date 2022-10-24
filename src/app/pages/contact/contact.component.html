@@ -3,64 +3,37 @@
         <img src="./../../../assets/location-map.png" alt="map" class="location-map">
     </div>
     <div class="contact-container drop-shadow">
-        <div class="form-container">        
-            <p>    
-                <mat-form-field appearance="fill">
+        <form class="form-container" [formGroup]="contactForm">
+
+            <mat-form-field appearance="fill">
                 <mat-label>WHAT IS YOUR COMPANY NAME OR PROJECT NAME?</mat-label>
-                <input matInput placeholder="WHAT IS YOUR COMPANY NAME OR PROJECT NAME?">
-                </mat-form-field>
-            </p>
-            <p>    
-                <mat-form-field appearance="fill">
+                <input formControlName="company" matInput placeholder="WHAT IS YOUR COMPANY NAME OR PROJECT NAME?">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
                 <mat-label>WHAT IS YOUR NAME?</mat-label>
-                <input matInput placeholder="WHAT IS YOUR NAME?">
-                </mat-form-field>
-            </p>
-            <p>    
-                <mat-form-field appearance="fill">
+                <input formControlName="name" matInput placeholder="WHAT IS YOUR NAME?">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
                 <mat-label>WHAT IS YOUR EMAIL?</mat-label>
-                <input matInput placeholder="WHAT IS YOUR EMAIL?">
-                </mat-form-field>
-            </p>
-            <p>    
-                <mat-form-field appearance="fill">
+                <input formControlName="email" matInput placeholder="WHAT IS YOUR EMAIL?">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
                 <mat-label>WHAT IS YOUR PHONE NUMBER?</mat-label>
-                <input matInput placeholder="WHAT IS YOUR PHONE NUMBER?">
-                </mat-form-field>
-            </p>
-            <p>    
-                <mat-form-field appearance="fill">
-                <mat-label>WHAT CAN WE DO FOR YOU?</mat-label>
-                <mat-select>
-                    <mat-option>Create an amazing new project from scratch</mat-option>
-                    <mat-option>Make my product even better</mat-option>
-                    <mat-option>Something else</mat-option>
-                </mat-select>
-                </mat-form-field>
-            </p>
-            <p>    
-                <mat-form-field appearance="fill">
-                <mat-label>WHAT IS YOUR BUDGET?</mat-label>
-                <mat-select>
-                    <mat-option>less than $25,000</mat-option>
-                    <mat-option>$25,000 - $50,000</mat-option>
-                    <mat-option>$50,000 - $100,000</mat-option>
-                    <mat-option>$100,000 or more</mat-option>
-                    <mat-option>To be determined</mat-option>
-                </mat-select>
-                </mat-form-field>
-            </p>
-            <p>    
-                <mat-form-field appearance="fill">
-                <mat-label>MESSAGE US?</mat-label>
-                <textarea matInput></textarea>
-                </mat-form-field>
-            </p>
-        </div>
+                <input formControlName="phone" matInput placeholder="WHAT IS YOUR PHONE NUMBER?">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>MESSAGE</mat-label>
+                <textarea formControlName="message" matInput></textarea>
+            </mat-form-field>
+        </form>
         <div class="contact-info-container">
             <div class="contact-title">
                 Contact Us
             </div>
         </div>
-    </div>   
+    </div>
 </div>
