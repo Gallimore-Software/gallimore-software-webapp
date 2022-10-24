@@ -22,6 +22,8 @@ export class ContactComponent implements OnInit {
 
   click() {
     console.log(this.contactForm.value);
+
+    // can also use this.contactForm.isValid bool
   }
 
 }
