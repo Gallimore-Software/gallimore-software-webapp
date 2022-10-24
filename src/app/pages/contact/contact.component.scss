@@ -1,6 +1,7 @@
 @import '../../../styles/general';
 
 .contact-section {
+    display: flex;
     margin-top: 10px;
     background-color: $light-background;
     color: $light-text;
@@ -17,29 +18,23 @@
     position: absolute;
     top: 170px;
     background-color: $light-background;
-    width: 760px;
+    width: 80%;
+    height: 100%;
 }
 
-.form-comtainer {
+.form-container {
     background-color: $light-background;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     align-content: center;
-    width: 100%;
+    width: 180%;
+    border: 2px solid #FFFFFF;
+    padding: 0px;
 }
 
 .contact-info-container {
     background-color: $dark-background;
-    display: flex;
-    width: 30%;
-    justify-content: space-between;
-}
-
-.contact-title {
-    
-    font-weight: bold;
-    color: $light-text;
-    text-align: center;
-    padding: 10% 5%;
+    width: 100%;
+    padding: 25px;
 }
 
 form label {
@@ -65,4 +60,8 @@ form label {
 
 .location-map {
     width: 100%;
+}
+
+mat-form-field {
+    display: block;
 }
