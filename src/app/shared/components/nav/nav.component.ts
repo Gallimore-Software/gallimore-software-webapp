@@ -1,4 +1,6 @@
+import { NavItem } from './models/nav-item';
 import { Component, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
 
 @Component({
@@ -8,11 +10,30 @@ import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
 })
 export class NavComponent {
 
-  constructor(public componentPageTitle: ComponentPageTitle) { }
+  @Output() sidenavToggled: EventEmitter<boolean> = new EventEmitter();
 
-  @Output() toggleSidenav = new EventEmitter<null>();
+  public showSidenav = false;
 
-  getTitle() {
-    return this.componentPageTitle.title;
+  public navItems = [
+    new NavItem('home'),
+    // new NavItem('about'),
+    new NavItem('technologies'),
+    new NavItem('projects'),
+    new NavItem('services'),
+    new NavItem('contact'),
+  ];
+
+  constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
+
+  onOpenSidenav() {
+    console.log('onOpenSidenav : nav');
+    this.showSidenav = true;
+    this.sidenavToggled.emit(this.showSidenav);
+  }
+
+  onCloseSidenav() {
+    console.log('onCloseSidenav : nav');
+    this.showSidenav = false;
+    this.sidenavToggled.emit(this.showSidenav);
   }
 }

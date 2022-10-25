@@ -1,0 +1,13 @@
+<mat-toolbar-row>
+  <button mat-button class="hamburger" (click)="onOpenSidenav()">
+    <mat-icon color="primary">menu</mat-icon>
+  </button>
+  <button (click)="route('home')" class="logo nav-item">
+    <img src="../../../../assets/gallimore-software-logo.svg">
+  </button>
+  <span class="title nav-item" focusOnNavigation>{{getTitle()}}</span>
+  <span class="fill-remaining-space nav-item"></span>
+  <div *ngFor="let item of navItems">
+    <button (click)="route(item.path)" mat-button color="primary" class="nav-item">{{item.name}}</button>
+  </div>
+</mat-toolbar-row>

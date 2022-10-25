@@ -1,0 +1,14 @@
+@import '../../../../../styles/general';
+
+.technologies-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.technologies-we-use-title {
+    font-size: 20px;
+    margin: 10px 10px 50px;
+    width: 250px;
+    display: flow-root;
+}

@@ -1,13 +1,11 @@
-<mat-toolbar-row>
-  <button mat-button class="hamburger" (click)="toggleSidenav.emit()">
-    <mat-icon color="primary">menu</mat-icon>
-  </button>
-  <span class="logo nav-item">
-    <img src="../../../../assets/gallimore-software-logo.svg">
-  </span>
-  <span class="title nav-item" focusOnNavigation>{{getTitle()}}</span>
-  <span class="fill-remaining-space nav-item"></span>
-  <button mat-button color="primary" class="nav-item">About Us</button>
-  <button mat-button color="primary" class="nav-item">What We Do</button>
-  <button mat-raised-button color="primary" class="nav-item">Contact</button>
-</mat-toolbar-row>
+<app-header-nav 
+    [hidden]="showSidenav" 
+    [navItems]="navItems" 
+    (openSidenav)="onOpenSidenav()">
+</app-header-nav>
+<app-sidenav 
+    [hidden]="!showSidenav" 
+    [opened]="showSidenav" 
+    [navItems]="navItems" 
+    (close)="onCloseSidenav()">
+</app-sidenav>

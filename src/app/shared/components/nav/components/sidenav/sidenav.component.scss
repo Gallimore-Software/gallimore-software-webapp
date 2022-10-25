@@ -1,0 +1,33 @@
+mat-sidenav-container {
+  height: 100%
+}
+
+mat-sidenav {
+  background-color: #002687;
+  width: 100%;
+}
+
+mat-sidenav-content {
+  padding: 10px;
+}
+
+.close-icon {
+  color: white;
+  cursor: pointer;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+.nav-item {
+  a {
+    color: white;
+  }
+
+  cursor: pointer;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+mat-divider {
+  background-color: white;
+}

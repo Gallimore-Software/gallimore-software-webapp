@@ -1,1 +1,5 @@
-<router-outlet></router-outlet>
+<app-header></app-header>
+<app-nav (sidenavToggled)="onSidenavToggled($event)"></app-nav>
+<div *ngIf="showContent">
+  <router-outlet></router-outlet>
+</div>

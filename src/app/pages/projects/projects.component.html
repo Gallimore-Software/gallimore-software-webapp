@@ -1,0 +1,10 @@
+  <div class="projects-container">
+    <div>Projects Showcase</div>
+    <div class="projects-text">Just a few of the projects we have worked on.</div>
+    <img class="developer" src="../../../assets/developer.svg">
+    <div class="projects-grid">
+      <div class="project-border" *ngFor="let project of projects;">
+        <app-project [project]="project"></app-project>
+      </div>
+    </div>
+  </div>

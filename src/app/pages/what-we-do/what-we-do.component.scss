@@ -1,0 +1,59 @@
+@import '../../../styles/general';
+
+.what-we-do-container {
+    display: flex;
+    line-height: normal;
+    padding: 50px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0 5%;
+    padding-top: 5%;
+}
+
+.what-we-do-header {
+    font-size: 36px;
+    font-weight: bold;
+    color: $dark-text;
+    text-align: center;
+    line-height: normal;
+    width: 100%;
+    position: relative;
+}
+
+/* media query for responsiveness */
+
+@media screen and (max-width: 760px) {
+    .what-we-do-container {
+        padding: 35px 0;  
+    }
+    
+    .items {
+        padding: 20px 0;    
+    }
+    
+    .what-we-do-header {
+        font-size: 18px;  
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .what-we-do-container {
+        padding: 35px 0; 
+    }
+    
+    .items {
+        padding: 20px 0;
+    }
+    
+    .what-we-do-header {
+        font-size: 12px;   
+    }
+}
