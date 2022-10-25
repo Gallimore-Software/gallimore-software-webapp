@@ -37,6 +37,7 @@ import { IntroComponent } from './pages/home/components/intro/intro.component';
 import { SidenavComponent } from './shared/components/nav/components/sidenav/sidenav.component';
 import { HeaderNavComponent } from './shared/components/nav/components/header-nav/header-nav.component';
 import { ProjectComponent } from './pages/projects/components/project/project.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { ProjectComponent } from './pages/projects/components/project/project.co
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [ComponentPageTitle],
   bootstrap: [AppComponent]

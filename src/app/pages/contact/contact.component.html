@@ -1,48 +1,39 @@
 <div class="contact-section">
+    <img src="./../../../assets/location-map.png" alt="map" class="location-map">
     <div class="contact-container drop-shadow">
-        <div class="form-container">        
-            <form action="">
-                <label for="project-name">WHAT IS YOUR COMPANY NAME OR PROJECT NAME?</label>
-                <input type="text" name="WHAT IS YOUR COMPANY NAME OR PROJECT NAME?" id="project-name">
-                <label for="full-name">WHAT IS YOUR NAME?</label>
-                <input type="text" name="WHAT IS YOUR NAME?" id="full-name">
-                <label for="email">WHAT IS YOUR EMAIL??</label>
-                <input type="text" name="WHAT IS YOUR EMAIL?" id="email">
-                <label for="phone-number">WHAT IS YOUR PHONE NUMBER?</label>
-                <input type="tel" name="WHAT IS YOUR PHONE NUMBER?" id="phone-number">
-                <div class="radios">
-                    <div>
-                        <label for="budget">WHAT CAN WE DO FOR YOU?</label>
-                        <label for="create-from-scratch">Create an amazing new project from scratch</label>
-                        <input type="radio" name="WHAT CAN WE DO FOR YOU?" id="create-from-scratch" value="Create an amazing new project from scratch">
-                        <label for="improve-product">Make my product even better</label>
-                        <input type="radio" name="WHAT CAN WE DO FOR YOU?" id="improve-product" value="Make my product even better">
-                        <label for="something-else">Something else</label>
-                        <input type="radio" name="WHAT CAN WE DO FOR YOU?" id="something-else" value="Something else">
-                    </div>
-                    <div>
-                        <label for="budget">WHAT IS YOUR BUDGET?</label>
-                        <label for="25k">less than $25,000</label>
-                        <input type="radio" name="WHAT IS YOUR BUDGET?" id="25k" value="less than $25,000">
-                        <label for="25k-50k">$25,000 - $50,000</label>
-                        <input type="radio" name="WHAT IS YOUR BUDGET?" id="25k-50k" value="$25,000 - $50,000">
-                        <label for="50k-100k">$50,000 - $100,000</label>
-                        <input type="radio" name="WHAT IS YOUR BUDGET?" id="50k-100k" value="$50,000 - $100,000">
-                        <label for="100k-more">$100,000 or more</label>
-                        <input type="radio" name="WHAT IS YOUR BUDGET?" id="100k-more" value="$100,000 or more">
-                        <label for="not-sure">To be determined</label>
-                        <input type="radio" name="WHAT IS YOUR BUDGET?" id="not-sure" value="To be determined">
-                    </div>
-                </div>
-                <label for="message-us">MESSAGE US?</label>
-                <input type="text" name="MESSAGE US?" id="message-us">
-                <input type="button" value="submit" id="submit-button">
-            </form>
-        </div>
+        <form class="form-container" [formGroup]="contactForm">
+            <mat-form-field appearance="fill">
+                <mat-label>WHAT IS YOUR COMPANY NAME OR PROJECT NAME?</mat-label>
+                <input formControlName="company" matInput placeholder="WHAT IS YOUR COMPANY NAME OR PROJECT NAME?">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>WHAT IS YOUR NAME?</mat-label>
+                <input formControlName="name" matInput placeholder="WHAT IS YOUR NAME?">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>WHAT IS YOUR EMAIL?</mat-label>
+                <input formControlName="email" matInput placeholder="WHAT IS YOUR EMAIL?">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>WHAT IS YOUR PHONE NUMBER?</mat-label>
+                <input formControlName="phone" matInput placeholder="WHAT IS YOUR PHONE NUMBER?">
+            </mat-form-field>
+            <mat-form-field appearance="fill" id="message-us">
+                <mat-label>MESSAGE</mat-label>
+                <textarea formControlName="message" matInput></textarea>
+            </mat-form-field>
+            <button type="button" (click)="click()">Submit</button>
+        </form>
         <div class="contact-info-container">
-            <div class="contact-title">
+            <div>
                 Contact Us
+            </div>    
+            <div>
+                Call Us
+            </div>
+            <div>
+                Mail Us
             </div>
         </div>
-    </div>   
+    </div>
 </div>
