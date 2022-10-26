@@ -1,14 +1,3 @@
-const express = require('express');
-const path = require('path');
-const app = express();
-
-// Serve static files....
-app.use(express.static(__dirname + '/dist/gallimore-software-site'));
-
-// Send all requests to index.html
-app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/gallimore-software-site/index.html'));
-});
-
-// default Heroku PORT
-app.listen(process.env.PORT || 3000);
+version https://git-lfs.github.com/spec/v1
+oid sha256:39543617d8573bae15f73378eb22f85991450583e34f6d60ff31e04546950305
+size 405

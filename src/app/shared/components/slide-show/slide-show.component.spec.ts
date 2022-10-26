@@ -1,25 +1,3 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-
-import { SlideShowComponent } from './slide-show.component';
-
-describe('SlideShowComponent', () => {
-  let component: SlideShowComponent;
-  let fixture: ComponentFixture<SlideShowComponent>;
-
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [ SlideShowComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SlideShowComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:f28279c9e03c47eb23e154879bb15c67614269b330e5efbb95142563205c739f
+size 664
