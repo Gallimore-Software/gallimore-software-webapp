@@ -1,17 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
-
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
-})
-export class HomeComponent implements OnInit {
-
-  constructor(private pageTitle: ComponentPageTitle) { }
-
-  ngOnInit(): void {
-    this.pageTitle.title = "Gallimore Software";
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2a4b78af9f5b50861f66fcb3781cd61bc36a2c54cfcfe0549336f0eb62667e8b
+size 435

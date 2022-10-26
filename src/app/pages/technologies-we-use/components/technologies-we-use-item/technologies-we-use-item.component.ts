@@ -1,17 +1,3 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { TechnologiesWeUseItem } from './models/techonologies-we-use-item';
-
-@Component({
-  selector: 'app-technologies-we-use-item',
-  templateUrl: './technologies-we-use-item.component.html',
-  styleUrls: ['./technologies-we-use-item.component.scss']
-})
-export class TechnologiesWeUseItemComponent implements OnInit {
-  @Input() technology: TechnologiesWeUseItem;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:928f79de6033a6a222e91aea913139c21a448a6f20475873f3c90a364afbfdfa
+size 474

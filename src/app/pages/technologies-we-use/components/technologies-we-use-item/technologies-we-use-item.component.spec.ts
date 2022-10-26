@@ -1,25 +1,3 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-
-import { TechnologiesWeUseItemComponent } from './technologies-we-use-item.component';
-
-describe('TechnologiesWeUseItemComponent', () => {
-  let component: TechnologiesWeUseItemComponent;
-  let fixture: ComponentFixture<TechnologiesWeUseItemComponent>;
-
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [ TechnologiesWeUseItemComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(TechnologiesWeUseItemComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:302cb58324620a0632aa5a5e705c3248ed09dbb30b44dac541abdcd0a0173f94
+size 750
