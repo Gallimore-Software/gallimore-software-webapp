@@ -13,22 +13,21 @@
     display: flex;
     margin-left: 10%;
     margin-right: 5%;
-    padding-left: 5%;
     justify-content: space-between;
     position: absolute;
     top: 170px;
     background-color: $light-background;
     width: 80%;
-    height: 100%;
+    height: 110%;
 }
 
 .form-container {
     background-color: $light-background;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     align-content: center;
     width: 180%;
     border: 2px solid #FFFFFF;
-    padding: 0px;
+    padding: 25px;
+    color: $dark-text;
 }
 
 .contact-info-container {
@@ -46,9 +45,10 @@ form label {
     box-sizing: border-box;
     background: transparent;
     border-radius: 6px;
-    margin: 20px;
-    padding-top: 40px;
     border: 2px solid #C5C8D3;
+    width: 100%;
+    height: 200px;
+
 }
 
 .radios {
@@ -63,5 +63,34 @@ form label {
 }
 
 mat-form-field {
+    display: block;
+}
+
+#mat-label {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+input {
+    border: 2px solid #C5C8D3;
+}
+
+#message-us-icon {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+
+#message-box-section {
+    display: flex;
+}
+
+#submit-button {
+    padding: 150px 0px 0px 5px;
+    margin: 0;
+}
+
+.middle {
     display: block;
 }

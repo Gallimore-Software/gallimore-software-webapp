@@ -1,38 +1,45 @@
 <div class="contact-section">
     <img src="./../../../assets/location-map.png" alt="map" class="location-map">
-    <div class="contact-container drop-shadow">
+    <div class="contact-container">
         <form class="form-container" [formGroup]="contactForm">
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="none">
                 <mat-label>WHAT IS YOUR COMPANY NAME OR PROJECT NAME?</mat-label>
                 <input formControlName="company" matInput placeholder="WHAT IS YOUR COMPANY NAME OR PROJECT NAME?">
             </mat-form-field>
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="none">
                 <mat-label>WHAT IS YOUR NAME?</mat-label>
                 <input formControlName="name" matInput placeholder="WHAT IS YOUR NAME?">
             </mat-form-field>
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="none">
                 <mat-label>WHAT IS YOUR EMAIL?</mat-label>
                 <input formControlName="email" matInput placeholder="WHAT IS YOUR EMAIL?">
             </mat-form-field>
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="none">
                 <mat-label>WHAT IS YOUR PHONE NUMBER?</mat-label>
                 <input formControlName="phone" matInput placeholder="WHAT IS YOUR PHONE NUMBER?">
             </mat-form-field>
-            <mat-form-field appearance="fill" id="message-us">
+            <mat-form-field appearance="none" id="message-us">
                 <mat-label>MESSAGE</mat-label>
                 <textarea formControlName="message" matInput></textarea>
             </mat-form-field>
-            <button type="button" (click)="click()">Submit</button>
         </form>
-        <div class="contact-info-container">
+        <div class="middle">
             <div>
-                Contact Us
-            </div>    
-            <div>
-                Call Us
+                <img src="./../../../assets/message-us-icon.png" alt="" id="message-us-icon">
             </div>
             <div>
-                Mail Us
+                <button mat-button type="button" (click)="click()" id="submit-button">Submit</button>
+            </div>
+        </div>
+        <div class="contact-info-container">
+            <div>
+                <button mat-button type="button" (click)="click()">Contact Us</button>
+            </div>    
+            <div>
+                <button mat-button type="button" (click)="click()">Call Us</button>
+            </div>
+            <div>
+                <button mat-button type="button" (click)="click()">Mail Us</button>
             </div>
         </div>
     </div>
