@@ -1,22 +1,3 @@
-import { environment } from '../../../../environments/environment';
-import { Component, OnInit, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
-@Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
-})
-export class HeaderComponent implements OnInit {
-
-  public github = '@assets/github-circle-white-transparent.svg';
-  public title = environment.title;
-
-  constructor(@Inject(DOCUMENT) private document: Document) { }
-
-  ngOnInit(): void {
-  }
-
-  onGitHubClick() {
-    this.document.location.href = 'https://github.com/nfgallimore';
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fbc7e829797308eb2396306d044bd980d9567908eb863a1e365c9338ad571bad
+size 633

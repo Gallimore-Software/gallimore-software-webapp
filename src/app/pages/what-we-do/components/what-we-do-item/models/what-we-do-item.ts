@@ -1,14 +1,3 @@
-export class WhatWeDoItem
-{
-    imageUrl: string;
-    textContent: string;
-    imageDescription: string;
-    name: string;
-
-    constructor(name: string, imageUrl: string, imageDescription: string, textContent: string) {
-        this.name = name;
-        this.imageUrl = imageUrl;
-        this.imageDescription = imageDescription;
-        this.textContent = textContent;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:075b7675abe2f03e7418f244dda74f6707b256857762a732b69806bfec4238ea
+size 378

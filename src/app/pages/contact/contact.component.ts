@@ -1,29 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-
-@Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
-})
-export class ContactComponent implements OnInit {
-  contactForm = new FormGroup({
-    company: new FormControl('Company', Validators.required),
-    name: new FormControl('John Doe', Validators.required),
-    email: new FormControl('default@email.com', Validators.required),
-    phone: new FormControl('+1234567890', Validators.required),
-    message: new FormControl('Type your message here', Validators.required)
-  });
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  click() {
-    console.log(this.contactForm.value);
-
-    // can also use this.contactForm.isValid bool
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:479e65c6d781679cac0c13fd95680f74165bbba2704e34f6276066572621d98c
+size 828

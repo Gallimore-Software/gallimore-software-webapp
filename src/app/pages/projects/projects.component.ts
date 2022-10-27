@@ -1,21 +1,3 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Project } from './models/project';
-
-@Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
-})
-export class ProjectsComponent implements OnInit {
-
-  constructor() { }
-
-  public projects: Array<Project> = [
-    new Project('Inventory Manager', 'Manage your inventory using a custom Angular app', 'https://github.com/nfgallimore/InventoryApp', ''),
-    new Project('Timesheet Manager', 'Manage your timesheets with this Angular app', 'https://github.com/nfgallimore/Timesheet', ''),
-  ];
-
-  ngOnInit(): void {
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:59dfa5ee2e70efb5576abad1bd56ff6ac19dadc828fce84ca1a5225f6717b312
+size 654
