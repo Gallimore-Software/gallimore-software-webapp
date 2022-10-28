@@ -1,3 +1,96 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34ebb055ea5194dbe84661292d7645463747f539e25081bd6d80536bc8bf59bb
-size 1207
+@import '../../../styles/general';
+
+.contact-section {
+    display: flex;
+    margin-top: 10px;
+    background-color: $light-background;
+    color: $light-text;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-container {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 5%;
+    justify-content: space-between;
+    position: absolute;
+    top: 170px;
+    background-color: $light-background;
+    width: 80%;
+    height: 110%;
+}
+
+.form-container {
+    background-color: $light-background;
+    align-content: center;
+    width: 180%;
+    border: 2px solid #FFFFFF;
+    padding: 25px;
+    color: $dark-text;
+}
+
+.contact-info-container {
+    background-color: $dark-background;
+    width: 100%;
+    padding: 25px;
+}
+
+form label {
+    color: $dark-text;
+    display: block;
+}
+
+#message-us {
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 6px;
+    border: 2px solid #C5C8D3;
+    width: 100%;
+    height: 200px;
+
+}
+
+.radios {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.location-map {
+    width: 100%;
+}
+
+mat-form-field {
+    display: block;
+}
+
+#mat-label {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+input {
+    border: 2px solid #C5C8D3;
+}
+
+#message-us-icon {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+
+#message-box-section {
+    display: flex;
+}
+
+#submit-button {
+    padding: 150px 0px 0px 5px;
+    margin: 0;
+}
+
+.middle {
+    display: block;
+}
