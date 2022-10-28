@@ -1,34 +1,3 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Router } from '@angular/router';
-import { ComponentPageTitle } from '@app/shared/services/page-title/page-title';
-
-@Component({
-  selector: 'app-header-nav',
-  templateUrl: './header-nav.component.html',
-  styleUrls: ['./header-nav.component.scss']
-})
-export class HeaderNavComponent implements OnInit {
-
-  @Input() navItems = [];
-  @Output() openSidenav: EventEmitter<any> = new EventEmitter();
-
-  constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
-
-  ngOnInit(): void {
-  }
-
-  getTitle() {
-    return this.componentPageTitle.title;
-  }
-
-  route(page) {
-    {
-      this.router.navigate([page]);
-    }
-  }
-
-  onOpenSidenav() {
-    console.log('onOpenSidenav : header-nav');
-    this.openSidenav.emit(null);
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f51255f617c261bc6470eb21603a4f32cff45360546153a350a37e55b84ee98
+size 839
