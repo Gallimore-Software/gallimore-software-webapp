@@ -128,9 +128,10 @@
       }
     }
   },
-  "defaultProject": "gallimore-software-site",
   "cli": {
     "analytics": "7c442817-7942-4fd3-91db-3c7d1db4f7ec",
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
