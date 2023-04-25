@@ -13,28 +13,30 @@
     display: flex;
     margin-left: 10%;
     margin-right: 5%;
-    padding-left: 5%;
     justify-content: space-between;
     position: absolute;
     top: 170px;
     background-color: $light-background;
     width: 80%;
-    height: 100%;
+    height: 110%;
 }
 
 .form-container {
     background-color: $light-background;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     align-content: center;
     width: 180%;
     border: 2px solid #FFFFFF;
-    padding: 0px;
+    padding: 25px;
+    color: $dark-text;
 }
 
 .contact-info-container {
     background-color: $dark-background;
     width: 100%;
-    padding: 25px;
+    padding: 25px 0;
+    display: grid;
+    justify-content: space-evenly;
+    height: 550px;
 }
 
 form label {
@@ -46,9 +48,10 @@ form label {
     box-sizing: border-box;
     background: transparent;
     border-radius: 6px;
-    margin: 20px;
-    padding-top: 40px;
     border: 2px solid #C5C8D3;
+    width: 100%;
+    height: 200px;
+
 }
 
 .radios {
@@ -64,4 +67,38 @@ form label {
 
 mat-form-field {
     display: block;
+}
+
+#mat-label {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+input {
+    border: 2px solid #C5C8D3;
+}
+
+#message-us-icon {
+    padding: 25px;
+}
+
+#message-box-section {
+    display: flex;
+}
+
+#submit-button {
+    padding: 5px;
+    margin: 330px 0;
+    background-color: $dark-background;
+}
+
+.middle {
+    display: block;
+}
+
+#get-in-touch {
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px 0;
 }

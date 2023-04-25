@@ -1,5 +1,7 @@
 # GallimoreSoftwareSite
 
+[![Azure Static Web Apps CI/CD](https://github.com/Gallimore-Software/gallimore-software/actions/workflows/azure-static-web-apps-victorious-flower-0312f7d0f.yml/badge.svg)](https://github.com/Gallimore-Software/gallimore-software/actions/workflows/azure-static-web-apps-victorious-flower-0312f7d0f.yml)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
 
 ## Development server
