@@ -20,7 +20,6 @@ export class NavComponent {
     new NavItem('technologies'),
     new NavItem('projects'),
     new NavItem('services'),
-    new NavItem('contact'),
   ];
 
   constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
