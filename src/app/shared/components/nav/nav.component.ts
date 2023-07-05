@@ -18,9 +18,7 @@ export class NavComponent {
     new NavItem('home'),
     // new NavItem('about'),
     new NavItem('technologies'),
-    new NavItem('projects'),
     new NavItem('services'),
-    new NavItem('contact'),
   ];
 
   constructor(public componentPageTitle: ComponentPageTitle, private router: Router) { }
