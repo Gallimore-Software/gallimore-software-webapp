@@ -16,7 +16,7 @@ export class NavComponent {
 
   public navItems = [
     new NavItem('home'),
-    // new NavItem('about'),
+    new NavItem('projects'),
     new NavItem('technologies'),
     new NavItem('services'),
   ];
