@@ -1,8 +1,19 @@
-# GallimoreSoftwareSite
+# Repository for gallimoresoftware.com
 
+Welcome to the [gallimoresoftware.com](https://www.gallimoresoftware.com) repository. We encourage you to peruse our site's source code
+
+## Pages
+- About Us
+- Contact
+- Home
+- Projects
+- Technologies We Use
+- What We Do
+
+## Project details
 [![Azure Static Web Apps CI/CD](https://github.com/Gallimore-Software/gallimore-software/actions/workflows/azure-static-web-apps-victorious-flower-0312f7d0f.yml/badge.svg)](https://github.com/Gallimore-Software/gallimore-software/actions/workflows/azure-static-web-apps-victorious-flower-0312f7d0f.yml)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2. 
 
 ## Development server
 
