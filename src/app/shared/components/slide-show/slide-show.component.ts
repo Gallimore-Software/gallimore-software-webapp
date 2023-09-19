@@ -31,7 +31,7 @@ export class SlideShowComponent implements OnInit {
     this.slideIndex = n;
     switch (n) {
       case 0:
-        this.textContent = 'We offer high quality software solutions that fit our customers\' unique needs.';
+        this.textContent = 'We offer high quality software solutions that fit our customers\' unique needs. Contact nick@gallimoresoftware.com';
         break;
       case 1:
         this.textContent = "Good quality code, written for you -- by us, with business goals in mind."
